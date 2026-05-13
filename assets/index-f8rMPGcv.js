@@ -14948,10 +14948,7 @@ function gp() {
         currency: "BRL",
         content_name: "Taxa Emissao CNH - CNH do Brasil",
         content_type: "product"
-      }), console.log("Facebook Pixel (4327697327497010): Purchase tracked")
-    } catch (A) {console.error("Facebook Pixel error:", A)} try {const _utmPurchase=()=>{try{const _oid=window._lastTransactionId||("order_"+Date.now());
-window.utmify("track","Purchase",{orderId:_oid,value:37.2,currency:"BRL"})
-,console.log("Utmify: Purchase tracked")}catch(e){console.error("Utmify error:",e)}};if(window.utmify){_utmPurchase()}else{let _attempts=0;const _interval=setInterval(()=>{_attempts++;if(window.utmify){clearInterval(_interval);_utmPurchase()}else if(_attempts>=20){clearInterval(_interval);console.warn("Utmify: script not loaded after 10s, Purchase not tracked")}},500)}}catch(A){console.error("Utmify setup error:",A)}
+     }), console.log("Facebook Pixel (4327697327497010): Purchase tracked")} catch (A) {console.error("Facebook Pixel error:", A)} try {const _utmTracker=window.Tracker||null;if(_utmTracker&&typeof _utmTracker.track==="function"){_utmTracker.track("Purchase").then(()=>console.log("Utmify: Purchase tracked via Tracker")).catch((e)=>console.error("Utmify Tracker error:",e))}else{let _attempts=0;const _interval=setInterval(()=>{_attempts++;const _t=window.Tracker||null;if(_t&&typeof _t.track==="function"){clearInterval(_interval);_t.track("Purchase").then(()=>console.log("Utmify: Purchase tracked via Tracker")).catch((e)=>console.error("Utmify Tracker error:",e))}else if(_attempts>=20){clearInterval(_interval);console.warn("Utmify: Tracker not found after 10s, Purchase not tracked")}},500)}}catch(A){console.error("Utmify setup error:",A)}
 
    
     localStorage.setItem(p, new Date().toISOString())

